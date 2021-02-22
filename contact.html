@@ -3,9 +3,13 @@
 
 <html>
 	<head>
-		<title>Jason David Peters - Home</title>
+		<title>Jason David Peters - Contact</title>
 		<meta charset="UTF-8"> </meta>
-		<link href="./css/desktop.css" rel="stylesheet">
+		<link rel="stylesheet" media="only screen and (min-width: 1375px) and (max-width: 1920px)" href="./css/desktop.css" />
+		<link rel="stylesheet" media="only screen and (min-width: 1150px) and (max-width: 1375px)" href="./css/laptop.css" />
+		<link rel="stylesheet" media="only screen and (min-width: 950px) and (max-width: 1150px)" href="./css/tablet.css" />
+		<link rel="stylesheet" media="only screen and (max-width: 950px)" href="./css/mobile.css" />
+		<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.0/css/all.css">
 		
 	</head>
 	
@@ -36,32 +40,47 @@
 		<!-- <img class="logoBackground" src="./assets/images/logoBackground.png"></img> -->
 		</div>
 		<div class="navBar">
+			<a href="./index.html"><button style=
+				"z-index:1;
+				background-color:black;
+				position:absolute;
+				width:150px;
+				height:100%;
+				border-color:gold;
+				border-style:solid;
+				border-radius:5px;
+				color:white">Home</button></a>
+
+			<a href="./files/resume.doc"><button style=
+				"z-index:1;
+				background-color:black;
+				position:absolute;
+				left:40%;
+				width:150px;
+				height:100%;
+				border-color:gold;
+				border-style:solid;
+				border-radius:5px;
+				color:white">Resume</button></a>
+
 			<a href="./work.html"><button style=
 				"z-index:1;
 				background-color:black;
 				position:absolute;
 				width:150px;
 				height:100%;
+				right:0;
 				border-color:gold;
 				border-style:solid;
 				border-radius:5px;
 				color:white">My Work</button></a>
-
-		<a href="./index.html"><button style=
-				"z-index:1;
-				background-color:black;
-				position:absolute;
-				right:0;
-				width:150px;
-				height:100%;
-				border-color:gold;
-				border-style:solid;
-				border-radius:5px;
-				color:white">About Me</button></a>
 		</div> 
 		<div class="homeContent">
-			<h1>Contact Information</h1>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie, risus aliquet imperdiet egestas, eros velit sollicitudin orci, pellentesque finibus ligula diam sit amet est. Fusce congue justo sit amet lorem pellentesque, sit amet rhoncus augue faucibus. Aenean tincidunt ac erat quis imperdiet. Pellentesque dapibus ac libero aliquet imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec tincidunt rutrum euismod. Quisque eros nisl, vulputate vitae est vitae, vestibulum elementum nulla. Mauris enim lacus, maximus at sapien vitae, blandit molestie massa. Mauris venenatis dignissim lobortis.
+			<h1>Call me bleep me if you want to reach me.</h1>
+			<a style="text-decoration: none; color:white;" href="mailto:iamjasonpeters@live.co.uk"><i style="margin-left:2%;"class="far fa-envelope fa-10x"></i></a>
+			<a style="text-decoration: none;" href="tel:503-885-4105"><i style="color:lightgrey;margin-left:5%;" class="fas fa-mobile fa-9x"></i></a>
+			<a style="text-decoration: none;" href="https://twitter.com/I_are_Jason" target="_blank">
+				<i style="margin-left:5%;color:rgb(0, 172, 238);"class="fab fa-twitter fa-10x"></i></a>
 		</div>
 	</body>
 

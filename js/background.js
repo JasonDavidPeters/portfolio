@@ -1,17 +1,20 @@
 var htmlElement = document.documentElement;
 var query = window.getComputedStyle(document.body);
-var fontSize = 18;
+var fontSize = 150;
 htmlElement.style.backgroundColor="black";
 var containerElement = document.createElement("div");
 displayNumbers();
 var resizing;
 
 function resizeWindow(){ 
-    // console.log('firing event');
     query = window.getComputedStyle(htmlElement);
+    for (var i =0; i < htmlElement.children.length; i++) {
+        var child = htmlElement.children[i];
+
+        if (child === containerElement) htmlElement.removeChild(child);
+    }
     containerElement=document.createElement('div');
-    // if (!resizing)
-    // displayNumbers();
+    displayNumbers();
 }
 window.addEventListener("resize", function(event) {
     resizing=true;
